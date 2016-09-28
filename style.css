@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    letter-spacing: .05em;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.container-images {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 60px;
+    background-color: #D7DADB;
+    width: 800px;
+    height: 800px;
+    box-sizing: content-box;
+    border: 2px solid #D7DADB;
+    display: inline-block;
+}
+
+.container-images img {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#oryg {
+    box-sizing: content-box;
+    width: 800px; 
+    border: 2px solid #D7DADB;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.top-menu {
+    background-color: #2C3E50;
+}
+
+.top-menu p {
+    display: inline-block;
+    border-left: 4px solid white;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.top-menu ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.top-menu li {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: 30px;
+}
+
+.top-menu li:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+.image-button {
+    border: 0;
+    background: url(image-2-24.png) no-repeat 8px center;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: background 200ms;
+    margin: 0;
+    padding: 12px;
+    padding-left: 44px;
+}
+
+.image-button:hover {
+    background-color: #6DBCDB;
+}
+
+.image-button-active {
+    background-color: #6DBCDB;
+}
+
+.image-button-inactive {
+    background-color: #2C3E50;
+}
+
+.active {
+    border: 0;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #FC4349;
+    color: #FFFFFF;
+    transition: background 200ms;
+    width: 160px;
+}
+
+.active:hover {
+    background-color: #6DBCDB;
+}
+
+.inactive {
+    width: 160px;
+    padding: 12px;
+    cursor: auto;
+    background-color: #2C3E50;
+    color: #949696;
+    border-left: 1px solid #949696;
+    border-right: 1px solid #949696;
+}
+
+#timer {
+    display: none;
+}
+
+#timer:before {
+    content: '(';
+}
+
+#timer:after {
+    content: ')';
+}
+
+#thumbs-choice {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 51;
+    background-color: rgba(109, 188, 219, .8);
+    z-index: 20;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#thumbs-choice div {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 8px solid white;
+    margin: 20px;
+    display: inline-block;
+}
+
+#thumbs-choice img {
+    width: 300px;
+    transition: all 500ms;
+}
+
+#thumbs-choice img:hover {
+    width: 500px;
+}
