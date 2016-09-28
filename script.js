@@ -171,6 +171,7 @@ function timer() {
 function shuffle() {
     reset();
     isShuffle = true;
+    deactiveShuffleButton();
     var interlval = setInterval(moveRandom, 200);
     var timerVar = setInterval(timer, 1000);
     document.getElementById("timer").innerHTML = shuffleTime;
@@ -180,7 +181,6 @@ function shuffle() {
         clearInterval(interlval);
         clearInterval(timerVar);
         document.getElementById("timer").style.display = "none";
-        deactiveShuffleButton();
         isShuffle = false;
     }, shuffleTime * 1000);
     setOnClicks();
@@ -246,4 +246,3 @@ function start() {
 }
 
 window.onload = start;
-window.res
