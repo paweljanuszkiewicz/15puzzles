@@ -17,7 +17,6 @@ body {
 .container {
     margin: auto;
     max-width: 1200px;
-    max-height: 80vh;
 }
 
 .container-images {
@@ -25,8 +24,8 @@ body {
     margin-top: 60px;
     margin-left: 60px;
     background-color: #D7DADB;
-    width: 800px;
-    height: 800px;
+    width: 640px;
+    height: 640px;
     box-sizing: content-box;
     border: 2px solid #D7DADB;
     display: inline-block;
@@ -40,7 +39,7 @@ body {
 
 #oryg {
     box-sizing: content-box;
-    width: 800px; 
+    width: 640px; 
     border: 2px solid #D7DADB;
     margin-top: 60px;
     margin-left: 60px;
