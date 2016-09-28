@@ -17,6 +17,7 @@ body {
 .container {
     margin: auto;
     max-width: 1200px;
+    max-height: 80vh;
 }
 
 .container-images {
