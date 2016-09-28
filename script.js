@@ -1,5 +1,5 @@
 var thumb = new Array(16);
-var thumbSize = 200;
+var thumbSize = 160;
 var empty = 15;
 var tempo = 2;
 var isShuffle = false;
