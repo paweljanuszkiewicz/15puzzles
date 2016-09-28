@@ -15,8 +15,8 @@ body {
 }
 
 .container {
-    margin: auto;
-    max-width: 1200px;
+    text-align: center;
+    max-width: 1473px;
 }
 
 .container-images {
@@ -37,12 +37,24 @@ body {
     padding: 0;
 }
 
+@media (max-width: 1473px) {
+    .container {
+        text-align: center;
+    }
+    
+    .container-images, #oryg {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 #oryg {
     box-sizing: content-box;
     width: 640px; 
     border: 2px solid #D7DADB;
     margin-top: 60px;
     margin-left: 60px;
+    margin-right: 60px;
 }
 
 .top-menu {

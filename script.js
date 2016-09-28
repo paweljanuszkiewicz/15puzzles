@@ -246,3 +246,4 @@ function start() {
 }
 
 window.onload = start;
+window.res
