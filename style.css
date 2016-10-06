@@ -89,6 +89,7 @@ body {
     background: url(image-2-24.png) no-repeat 8px center;
     cursor: pointer;
     color: #FFFFFF;
+    -webkit-transition: background 200ms;
     transition: background 200ms;
     margin: 0;
     padding: 12px;
@@ -113,6 +114,7 @@ body {
     cursor: pointer;
     background-color: #FC4349;
     color: #FFFFFF;
+    -webkit-transition: background 200ms;
     transition: background 200ms;
     width: 160px;
 }
@@ -168,6 +170,7 @@ body {
 
 #thumbs-choice img {
     width: 300px;
+    -webkit-transition: all 500ms;
     transition: all 500ms;
 }
 
