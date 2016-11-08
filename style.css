@@ -110,9 +110,9 @@ body {
 }
 
 .inactive {
-    width: 160px;
+    width: 180px;
     padding: 12px;
-    cursor: auto;
+    cursor: default;
     background-color: #2C3E50;
     color: #949696;
     border-left: 1px solid #949696;

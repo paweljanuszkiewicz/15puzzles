@@ -168,8 +168,23 @@ function timer() {
         document.getElementById("timer").innerHTML = nowy;
 }
 
+function blockImageChange() {
+    var changeImage = document.getElementById("change-image");
+    changeImage.onclick = null;
+    changeImage.classList.add('inactive');
+    changeImage.classList.remove('image-button');
+}
+
+function freeImageChange() {
+    var changeImage = document.getElementById("change-image");
+    changeImage.onclick = showThumbs;
+    changeImage.classList.remove('inactive');
+    changeImage.classList.add('image-button');
+}
+
 function shuffle() {
     reset();
+    blockImageChange();
     isShuffle = true;
     var interlval = setInterval(moveRandom, 200);
     var timerVar = setInterval(timer, 1000);
@@ -182,6 +197,7 @@ function shuffle() {
         document.getElementById("timer").style.display = "none";
         deactiveShuffleButton();
         isShuffle = false;
+        freeImageChange();
     }, shuffleTime * 1000);
     setOnClicks();
 }
