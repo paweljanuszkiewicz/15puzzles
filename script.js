@@ -1,5 +1,5 @@
 var thumb = new Array(16);
-var thumbSize = 160;
+var thumbSize = 200;
 var empty = 15;
 var tempo = 2;
 var isShuffle = false;
@@ -168,10 +168,24 @@ function timer() {
         document.getElementById("timer").innerHTML = nowy;
 }
 
+function blockImageChange() {
+    var changeImage = document.getElementById("change-image");
+    changeImage.onclick = null;
+    changeImage.classList.add('inactive');
+    changeImage.classList.remove('image-button');
+}
+
+function freeImageChange() {
+    var changeImage = document.getElementById("change-image");
+    changeImage.onclick = showThumbs;
+    changeImage.classList.remove('inactive');
+    changeImage.classList.add('image-button');
+}
+
 function shuffle() {
     reset();
+    blockImageChange();
     isShuffle = true;
-    deactiveShuffleButton();
     var interlval = setInterval(moveRandom, 200);
     var timerVar = setInterval(timer, 1000);
     document.getElementById("timer").innerHTML = shuffleTime;
@@ -181,7 +195,9 @@ function shuffle() {
         clearInterval(interlval);
         clearInterval(timerVar);
         document.getElementById("timer").style.display = "none";
+        deactiveShuffleButton();
         isShuffle = false;
+        freeImageChange();
     }, shuffleTime * 1000);
     setOnClicks();
 }
